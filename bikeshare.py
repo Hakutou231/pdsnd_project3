@@ -6,7 +6,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -30,7 +29,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('ENTER DAY : ').lower()
     while day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday','sunday']:
-        day = input('ENTER DAY monday, tuesday, wednesday, thursday, friday, saturday, sunday : ').lower()
+        day = input('ENTER DAY monday, tuesday, ... sunday : ').lower()
 
     print('-'*40)
     return city, month, day
@@ -183,7 +182,6 @@ def raw_data (df):
     while (input()!= 'no'):
         x = x+5
         print(df.head(x))
-
 
 def main():
     while True:
