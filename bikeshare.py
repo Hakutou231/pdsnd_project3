@@ -183,7 +183,6 @@ def raw_data (df):
         x = x+5
         print(df.head(x))
 
-
 def main():
     while True:
         city, month, day = get_filters()
